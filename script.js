@@ -32,7 +32,7 @@ async function fetchData() {
     wind.innerHTML = `Wind (kh/h) : ${parseData.current.wind_kph} `;
     pressure.innerHTML = `pressure(mb): ${parseData.current.pressure_mb} `;
     precipitate.innerHTML = `precipitate : ${parseData.current.precip_mm} `;
-    humidity.innerHTML = `humidity : ${parseData.current.humidity} `;
+    humidity.innerHTML = `humidity : ${parseData.current.humidity}% `;
     document.getElementById("initial").style.display = "block";
   }, 2000);
 }
