@@ -16,7 +16,7 @@ async function fetchData() {
   document.getElementById("hidden").style.display = "block";
   setTimeout(async () => {
     document.getElementById("hidden").style.display = "none";
-    const url = `http://api.weatherapi.com/v1/current.json?key=53e35489bace4ae591b180749231003&q=${place.value}`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=53e35489bace4ae591b180749231003&q=${place.value}`;
     const data = await fetch(url);
     const parseData = await data.json();
     console.log(parseData.location.name);
