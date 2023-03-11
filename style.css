@@ -1,0 +1,47 @@
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mainContainer{
+    background-color:darkcyan;
+}
+#initial{
+   display: none;
+}
+.second-class{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 30px;
+   
+}
+.innerContainer{
+    background-color: white;
+    border-radius: 10px;
+    min-height: 300px;
+    min-width: 400px;
+    box-shadow: 8px 18px 6px rgb(54, 42, 42);
+   
+}
+.input-group{
+    width: 200px;
+}
+#hidden{
+    display: none;
+}
+@media screen and (max-width: 800px)
+{
+    .second-class{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        gap: 30px;
+    }
+    .container{
+        width:18rem;
+    }
+}
