@@ -14,6 +14,7 @@ let text = document.querySelector(".text");
 
 async function fetchData() {
   document.getElementById("hidden").style.display = "block";
+  document.getElementById("initial").style.display = "none";
   setTimeout(async () => {
     document.getElementById("hidden").style.display = "none";
     const url = `https://api.weatherapi.com/v1/current.json?key=53e35489bace4ae591b180749231003&q=${place.value}`;
