@@ -33,6 +33,10 @@
     display: none;
     text-align: center;
 }
+#error{
+    display: none;
+    text-align: center;
+}
 .img{
     border-radius: 25%;
     height: 180px;
