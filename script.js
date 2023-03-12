@@ -26,13 +26,13 @@ async function fetchData() {
     country.innerHTML = `${parseData.location.country} `;
     last_upadated.innerHTML = `Last updated : ${parseData.current.last_updated} `;
     temp.innerHTML = `Temperature : ${parseData.current.temp_c} <sup>o</sup>C `;
-    faren.innerHTML = `fahrenheit : ${parseData.current.temp_f} <sup>o</sup>F`;
+    faren.innerHTML = `Fahrenheit : ${parseData.current.temp_f} <sup>o</sup>F`;
     image.src = `${parseData.current.condition.icon}`;
     text.innerHTML =`${parseData.current.condition.text}`
-    wind.innerHTML = `Wind (kh/h) : ${parseData.current.wind_kph} `;
-    pressure.innerHTML = `pressure(mb): ${parseData.current.pressure_mb} `;
-    precipitate.innerHTML = `precipitate : ${parseData.current.precip_mm} `;
-    humidity.innerHTML = `humidity : ${parseData.current.humidity}% `;
+    wind.innerHTML = `Wind (km/h) : ${parseData.current.wind_kph} `;
+    pressure.innerHTML = ` Pressure(mb): ${parseData.current.pressure_mb} `;
+    precipitate.innerHTML = `Precipitate : ${parseData.current.precip_mm} `;
+    humidity.innerHTML = `Humidity : ${parseData.current.humidity}% `;
     document.getElementById("initial").style.display = "block";
   }, 2000);
 }
