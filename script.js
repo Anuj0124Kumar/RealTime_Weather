@@ -43,5 +43,5 @@ async function fetchData() {
     } catch (error) {
       document.getElementById("error").style.display = "block";
     }
-  }, 2000);
+  }, 1000);
 }
